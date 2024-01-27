@@ -1,14 +1,18 @@
 import streamlit as st
 
 def main():
-    st.title("Greeting App")
-    
+    st.title("Custom Greeting App")
+
     # Get user input for name
-    name = var
-    
-    # Display greeting
+    name = st.text_input("Enter your name:")
+
+    # Define the greeting variable
+    var = v
+
+    # Display personalized greeting
     if name:
-        st.write(f"Hey, {name}!")
+        greeting_message = f"Hey, {name}! {var}"
+        st.write(greeting_message)
 
 if __name__ == "__main__":
     main()
