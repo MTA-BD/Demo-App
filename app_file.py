@@ -7,7 +7,7 @@ def main():
     name = st.text_input("Enter your name:")
 
     # Define the greeting variable
-    var = st.secrets{"v"}
+    var = st.secrets.v
 
     # Display personalized greeting
     if name:
